@@ -51,12 +51,8 @@ float getPricePerGallon(int roomNumber) {
 }
 return price;
 }
-//Function to calculate the gallons of paint needed for a room
-int gallonsForRoom(float squareFootage) {
-    return ceil(squareFootage * GALLONS_PER_SQFT);
-    }
 //Function to display final estimate
-void displayEstimate(float paintCharge, int totalGallons, float laborCharge, float laborHours) {
+void displayEstimate(float paintCharge, int totalGallons, float laborCharge, float laborHours, float totalHours) {
   cout << "\n--- Paint Job Estimate ---" << endl;
   cout << "Gallons of paint required: " << totalGallons << endl;
   cout << "Hours of labor required: " << laborHours << endl;
